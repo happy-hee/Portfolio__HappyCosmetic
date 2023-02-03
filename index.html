@@ -6,11 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- normalize CSS -->
     <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Cosmetic</title>
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <title>H.C</title>
   </head>
   <body>
-    <h1>Cosmetic</h1>
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="header__inner">
+        <!-- 햄버거 메뉴 -->
+        <button
+          class="header__burger-menu"
+          type="button"
+          aria-label="메뉴"
+          tabindex="2">
+          <span class="icon-line"></span>
+          <span class="icon-line"></span>
+          <span class="icon-line"></span>
+        </button>
+
+        <!-- 로고 -->
+        <h1 class="header__logo">
+          <span class="logo">
+            <a class="logo__link" href="./index.html" tabindex="1">
+              <span class="logo__text">H.C</span>
+            </a>
+          </span>
+        </h1>
+
+        <!-- 장바구니 -->
+        <div class="header__cart">
+          <a href="./index.html">
+            <img src="./assets/images/cart_icon.png" alt="장바구니" />
+          </a>
+        </div>
+      </div>
+    </header>
     <script src="./js/index.js"></script>
   </body>
 </html>

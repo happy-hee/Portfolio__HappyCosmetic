@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* Font */
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css); /* ============== Layout CSS ============== */
+* {
+  letter-spacing: normal;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  word-break: keep-all;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  max-width: 64rem;
+  letter-spacing: -0.04rem;
+  word-spacing: -0.07rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.285;
+  color: #472d28;
+  border: 1px solid red;
+  height: 300vh;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+svg {
+  display: block;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+/* 헤더 */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.4rem 0;
+  z-index: 2;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.header__burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 2rem;
+}
+.header__burger-menu .icon-line {
+  border-radius: 2rem;
+  width: 2.6rem;
+  height: 0.2rem;
+  background-color: #000;
+}
+.header__cart a {
+  display: inline-block;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.header__cart a img {
+  width: 100%;
+  height: auto;
+}
+
+/* 로고 */
+.logo__link {
+  display: flex;
+  align-items: center;
+}
+.logo__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.logo__text {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
