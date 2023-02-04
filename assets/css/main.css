@@ -180,6 +180,9 @@
 }
 
 /* 판매 랭킹 */
+.section-rank {
+  margin-bottom: 2rem;
+}
 .section-rank__top {
   margin-bottom: 2rem;
 }
