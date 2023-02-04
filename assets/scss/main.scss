@@ -146,3 +146,16 @@
     margin: 1.6rem 1.6rem 0 1.6rem;
   }
 }
+
+/* 배너 */
+.section-banner {
+  width: 100%;
+  height: 15rem;
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+}
