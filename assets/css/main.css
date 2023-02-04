@@ -107,7 +107,7 @@
 
 /* 카테고리 */
 .section-categories {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 .section-categories__list {
   display: flex;
@@ -242,4 +242,36 @@
 .section-rank .rank-tab__content .rank-list__text--price {
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+/* 신제품 소식 */
+.section-news__slide {
+  width: 100%;
+  text-align: left;
+  font-size: 1.8rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-news__item {
+  width: 80%;
+  max-width: 30rem;
+  height: auto;
+}
+.section-news__item img {
+  display: block;
+  width: 100%;
+  height: 19rem;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+.section-news__item .slide__inner-text {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+.section-news__item .slide__inner-text--title {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  font-size: 1.7rem;
 }

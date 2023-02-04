@@ -116,7 +116,7 @@
 
 /* 카테고리 */
 .section-categories {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -257,6 +257,40 @@
             font-weight: 600;
           }
         }
+      }
+    }
+  }
+}
+
+/* 신제품 소식 */
+.section-news {
+  &__slide {
+    width: 100%;
+    text-align: left;
+    font-size: 1.8rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    width: 80%;
+    max-width: 30rem;
+    height: auto;
+    img {
+      display: block;
+      width: 100%;
+      height: 19rem;
+      object-fit: cover;
+      border-radius: 0.6rem;
+    }
+    .slide__inner-text {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+      &--title {
+        margin-bottom: 0.4rem;
+        font-weight: 500;
+        font-size: 1.7rem;
       }
     }
   }

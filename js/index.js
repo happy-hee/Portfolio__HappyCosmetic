@@ -4,7 +4,7 @@
  */
 const mainSlide = new Swiper(".main-visual__slide", {
   spaceBetween: 0,
-  loop: false, //슬라이드 반복 여부
+  loop: false,
   autoplay: {
     //자동슬라이드
     delay: 2500, // 시간 설정
@@ -58,6 +58,7 @@ const mdpickSlide = new Swiper(".section-mdpick__slide", {
   slidesPerView: "auto",
   spaceBetween: 14,
   autoplay: false,
+  loop: false,
 });
 
 /**
@@ -83,4 +84,14 @@ tabItem.forEach((item, index) => {
     tabItem[index].classList.add("active");
     tabContent[index].classList.add("active");
   });
+});
+
+/**
+ * 신제품 소식 슬라이드
+ */
+const newsSlide = new Swiper(".section-news__slide", {
+  slidesPerView: "auto",
+  spaceBetween: 14,
+  autoplay: false,
+  loop: false,
 });
