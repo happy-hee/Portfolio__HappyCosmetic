@@ -106,6 +106,9 @@
 }
 
 /* 카테고리 */
+.section-categories {
+  margin-bottom: 1rem;
+}
 .section-categories__list {
   display: flex;
   flex-wrap: wrap;
@@ -116,12 +119,12 @@
   flex-basis: 20%;
   margin-bottom: 1.4rem;
 }
-.section-categories__item a {
+.section-categories__item > a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.section-categories__item span {
+.section-categories__item > span {
   font-size: 1.2rem;
   white-space: nowrap;
   padding-top: 0.8rem;
@@ -135,6 +138,7 @@
 /* 배너 */
 .section-banner {
   width: 100%;
+  margin-bottom: 2rem;
 }
 .section-banner__img {
   display: block;
@@ -164,6 +168,7 @@
   width: 100%;
   height: 14rem;
   object-fit: cover;
+  border-radius: 0.6rem;
 }
 .section-mdpick__item .slide__inner-text {
   font-size: 1.4rem;
@@ -171,5 +176,67 @@
 }
 .section-mdpick__item .slide__inner-text--price {
   margin-top: 0.4rem;
+  font-weight: 600;
+}
+
+/* 판매 랭킹 */
+.section-rank__top {
+  margin-bottom: 2rem;
+}
+.section-rank .rank-tab {
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+}
+.section-rank .rank-tab__item {
+  padding: 0.6rem 1.3rem;
+  margin-right: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+}
+.section-rank .rank-tab__item.active {
+  display: inline-block;
+  border: 1px solid #b81c0f;
+  background-color: #b81c0f;
+  color: #fff;
+}
+.section-rank .rank-tab__content {
+  display: none;
+}
+.section-rank .rank-tab__content.active {
+  display: block;
+}
+.section-rank .rank-tab__content .rank-list__item {
+  padding: 1rem 0;
+}
+.section-rank .rank-tab__content .rank-list__item > a {
+  position: relative;
+  display: flex;
+}
+.section-rank .rank-tab__content .rank-list__img-wrapper {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+}
+.section-rank .rank-tab__content .rank-list__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+.section-rank .rank-tab__content .rank-list__text {
+  margin-left: 2rem;
+}
+.section-rank .rank-tab__content .rank-list__text--num {
+  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #b81c0f;
+}
+.section-rank .rank-tab__content .rank-list__text--name {
+  margin-bottom: 0.4rem;
+}
+.section-rank .rank-tab__content .rank-list__text--price {
+  font-size: 1.5rem;
   font-weight: 600;
 }

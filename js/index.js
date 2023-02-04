@@ -59,3 +59,28 @@ const mdpickSlide = new Swiper(".section-mdpick__slide", {
   spaceBetween: 14,
   autoplay: false,
 });
+
+/**
+ * 판매 랭킹 탭 메뉴
+ */
+const tabItem = document.querySelectorAll(".rank-tab__item");
+const tabContent = document.querySelectorAll(".rank-tab__content");
+
+tabItem.forEach((item, index) => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault(); // a 태그의 기본 동작(링크 연결) 방지
+    tabContent.forEach((content) => {
+      content.classList.remove("active");
+    });
+
+    tabItem.forEach((content) => {
+      content.classList.remove("active");
+    });
+
+    console.log(tabItem[index]);
+    console.log(tabContent[index]);
+
+    tabItem[index].classList.add("active");
+    tabContent[index].classList.add("active");
+  });
+});
