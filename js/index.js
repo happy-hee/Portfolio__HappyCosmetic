@@ -5,11 +5,11 @@
 const mainSlide = new Swiper(".main-visual__slide", {
   spaceBetween: 0,
   loop: false, //슬라이드 반복 여부
-  // autoplay: {
-  //   //자동슬라이드
-  //   delay: 2500, // 시간 설정
-  //   disableOnInteraction: false, // false-스와이프 후 자동 재생
-  // },
+  autoplay: {
+    //자동슬라이드
+    delay: 2500, // 시간 설정
+    disableOnInteraction: false, // false-스와이프 후 자동 재생
+  },
   // 네비게이션
   navigation: {
     prevEl: ".slide__skip-navigation--prev",

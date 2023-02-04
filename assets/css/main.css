@@ -104,3 +104,34 @@
   margin-bottom: 0.4rem;
   font-weight: 400;
 }
+
+/* 카테고리 */
+.section-categories__wrapper {
+  padding: 1rem 0;
+}
+.section-categories__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -1.6rem;
+}
+.section-categories__item {
+  flex-basis: 20%;
+  margin-bottom: 1.4rem;
+}
+.section-categories__item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+}
+.section-categories__item span {
+  font-size: 1.2rem;
+  white-space: nowrap;
+  padding-top: 0.8rem;
+}
+.section-categories__icon {
+  width: 3.3rem;
+  height: 3.3rem;
+  margin: 1.6rem 1.6rem 0 1.6rem;
+}

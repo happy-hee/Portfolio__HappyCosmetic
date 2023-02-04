@@ -8,6 +8,10 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- 부트스트랩 아이콘 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
     <!-- normalize CSS -->
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/layout.css" />
@@ -15,41 +19,41 @@
     <title>H.C</title>
   </head>
   <body>
-    <!-- 헤더 -->
-    <header class="header">
-      <div class="header__inner">
-        <!-- 햄버거 메뉴 -->
-        <button
-          class="header__burger-menu"
-          type="button"
-          aria-label="메뉴"
-          tabindex="2">
-          <span class="icon-line"></span>
-          <span class="icon-line"></span>
-          <span class="icon-line"></span>
-        </button>
+    <div class="main-container">
+      <!-- 헤더 -->
+      <header class="header">
+        <div class="header__inner">
+          <!-- 햄버거 메뉴 -->
+          <button
+            class="header__burger-menu"
+            type="button"
+            aria-label="메뉴"
+            tabindex="2">
+            <span class="icon-line"></span>
+            <span class="icon-line"></span>
+            <span class="icon-line"></span>
+          </button>
 
-        <!-- 로고 -->
-        <h1 class="header__logo">
-          <span class="logo">
-            <a class="logo__link" href="./index.html" tabindex="1">
-              <span class="logo__text">Happy Cosmetic</span>
+          <!-- 로고 -->
+          <h1 class="header__logo">
+            <span class="logo">
+              <a class="logo__link" href="./index.html" tabindex="1">
+                <span class="logo__text">Happy Cosmetic</span>
+              </a>
+            </span>
+          </h1>
+
+          <!-- 장바구니 -->
+          <div class="header__cart">
+            <a href="./index.html">
+              <img src="./assets/images/icon/icon_cart.png" alt="장바구니" />
             </a>
-          </span>
-        </h1>
-
-        <!-- 장바구니 -->
-        <div class="header__cart">
-          <a href="./index.html">
-            <img src="./assets/images/cart_icon.png" alt="장바구니" />
-          </a>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <!-- 메인 비주얼 -->
-    <section class="main-visual">
-      <div class="container">
+      <!-- 메인 비주얼 -->
+      <section class="main-visual">
         <div class="main-visual__slide swiper">
           <!-- 슬라이드 -->
           <div class="main-visual__slide-wrapper swiper-wrapper">
@@ -107,8 +111,117 @@
             <div class="slide__pagination--progressbar"></div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- 카테고리 -->
+      <section class="section section-categories">
+        <div class="container">
+          <div class="section-categories__wrapper">
+            <ul class="section-categories__list">
+              <li class="section-categories__item">
+                <a href="./index.html">
+                  <img
+                    class="section-categories__icon"
+                    src="./assets/images/icon/icon_skin.png"
+                    alt="스킨케어" />
+                  <span>스킨케어</span>
+                </a>
+              </li>
+              <li class="section-categories__item">
+                <a href="./index.html">
+                  <img
+                    class="section-categories__icon"
+                    src="./assets/images/icon/icon_suncare.png"
+                    alt="선케어" />
+                  <span>선케어</span>
+                </a>
+              </li>
+              <li class="section-categories__item">
+                <a href="./index.html">
+                  <img
+                    class="section-categories__icon"
+                    src="./assets/images/icon/icon_makeup.png"
+                    alt="메이크업" />
+                  <span>메이크업</span>
+                </a>
+              </li>
+              <li class="section-categories__item">
+                <a href="./index.html">
+                  <img
+                    class="section-categories__icon"
+                    src="./assets/images/icon/icon_clean.png"
+                    alt="클렌징" />
+                  <span>클렌징</span>
+                </a>
+              </li>
+              <li class="section-categories__item">
+                <a href="./index.html">
+                  <img
+                    class="section-categories__icon"
+                    src="./assets/images/icon/icon_lip.png"
+                    alt="립" />
+                  <span>립</span>
+                </a>
+              </li>
+              <li class="section-categories__item">
+                <a href="./index.html">
+                  <img
+                    class="section-categories__icon"
+                    src="./assets/images/icon/icon_nail.png"
+                    alt="네일" />
+                  <span>네일</span>
+                </a>
+              </li>
+              <li class="section-categories__item">
+                <a href="./index.html">
+                  <img
+                    class="section-categories__icon"
+                    src="./assets/images/icon/icon_haircare.png"
+                    alt="헤어" />
+                  <span>헤어</span>
+                </a>
+              </li>
+              <li class="section-categories__item">
+                <a href="./index.html">
+                  <img
+                    class="section-categories__icon"
+                    src="./assets/images/icon/icon_mask.png"
+                    alt="팩/마스크" />
+                  <span>팩/마스크</span>
+                </a>
+              </li>
+              <li class="section-categories__item">
+                <a href="./index.html">
+                  <img
+                    class="section-categories__icon"
+                    src="./assets/images/icon/icon_handcare.png"
+                    alt="핸드케어" />
+                  <span>핸드케어</span>
+                </a>
+              </li>
+              <li class="section-categories__item">
+                <a href="./index.html">
+                  <img
+                    class="section-categories__icon"
+                    src="./assets/images/icon/icon_footcare.png"
+                    alt="풋케어" />
+                  <span>풋케어</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <!-- 아이콘 출저 표기
+      <p>
+        <a href="https://www.flaticon.com/authors/kornkun" title="icons use"
+          >icons created by kornkun - Flaticon</a
+        >
+      </p> -->
+    </footer>
 
     <!-- 스크립트 -->
     <!-- Swiper 스크립트 -->

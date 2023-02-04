@@ -3,11 +3,9 @@
 @import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css); /* ============== Layout CSS ============== */
 * {
-  letter-spacing: normal;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  word-break: keep-all;
 }
 
 html {
@@ -18,13 +16,15 @@ body {
   position: relative;
   margin: 0 auto;
   max-width: 64rem;
-  letter-spacing: -0.04rem;
-  word-spacing: -0.07rem;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.4rem;
   font-weight: 300;
+  letter-spacing: -0.04rem;
+  word-spacing: -0.07rem;
+  word-break: keep-all;
   line-height: 1.285;
-  color: #b81c0f;
+  background-color: #f7f7f7;
+  color: #333;
 }
 
 .h1,
@@ -68,6 +68,10 @@ svg {
 button {
   border: 0;
   background-color: transparent;
+}
+
+.main-container {
+  background: #fff;
 }
 
 /* 헤더 */
@@ -122,4 +126,9 @@ button {
   color: #000;
   font-size: 2.4rem;
   font-weight: 700;
+}
+
+/* 섹션 */
+.container {
+  padding: 0 2.4rem;
 }
