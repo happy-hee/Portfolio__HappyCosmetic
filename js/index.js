@@ -1,5 +1,5 @@
 /**
- * 슬라이드
+ * 메인 슬라이드
  * https://swiperjs.com/
  */
 const mainSlide = new Swiper(".main-visual__slide", {
@@ -48,6 +48,14 @@ const pagingSwiper = new Swiper(".main-visual__slide", {
     type: "progressbar",
   },
 });
-
 //Main Swiper로 progress Bar 제어
 mainSlide.controller.control = pagingSwiper;
+
+/**
+ * MD'S PICK 슬라이드
+ */
+const mdpickSlide = new Swiper(".section-mdpick__slide", {
+  slidesPerView: "auto",
+  spaceBetween: 14,
+  autoplay: false,
+});

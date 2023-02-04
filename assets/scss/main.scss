@@ -62,7 +62,7 @@
         right: 0 !important;
         left: 0 !important;
         color: #fff;
-        font-size: 16px;
+        font-size: 1.6rem;
         .current_page {
           position: absolute;
           left: 6% !important;
@@ -116,9 +116,6 @@
 
 /* 카테고리 */
 .section-categories {
-  &__wrapper {
-    padding: 1rem 0;
-  }
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -132,7 +129,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: #000;
     }
     span {
       font-size: 1.2rem;
@@ -150,12 +146,43 @@
 /* 배너 */
 .section-banner {
   width: 100%;
-  height: 15rem;
   &__img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
+  }
+}
+
+/* MD PICK */
+.section-mdpick {
+  &__slide {
+    width: 100%;
+    text-align: left;
+    font-size: 1.8rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    width: 16%;
+    min-width: 10rem;
+    height: auto;
+    img {
+      display: block;
+      width: 100%;
+      height: 14rem;
+      object-fit: cover;
+    }
+    .slide__inner-text {
+      font-size: 1.4rem;
+      margin-top: 0.8rem;
+      &--price {
+        margin-top: 0.4rem;
+        font-weight: 600;
+      }
+    }
   }
 }
