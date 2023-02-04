@@ -24,9 +24,7 @@ body {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.285;
-  color: #472d28;
-  border: 1px solid red;
-  height: 300vh;
+  color: #b81c0f;
 }
 
 .h1,
@@ -86,7 +84,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 2.4rem;
 }
 .header__burger-menu {
   display: flex;
@@ -121,6 +119,7 @@ button {
 }
 .logo__text {
   display: block;
+  color: #000;
   font-size: 2.4rem;
   font-weight: 700;
 }

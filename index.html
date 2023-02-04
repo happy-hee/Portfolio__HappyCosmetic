@@ -33,7 +33,7 @@
         <h1 class="header__logo">
           <span class="logo">
             <a class="logo__link" href="./index.html" tabindex="1">
-              <span class="logo__text">H.C</span>
+              <span class="logo__text">Happy Cosmetic</span>
             </a>
           </span>
         </h1>
@@ -47,20 +47,68 @@
       </div>
     </header>
 
-    <!-- Slider 테스트용 코드 -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
+    <!-- 메인 비주얼 -->
+    <section class="main-visual">
+      <div class="container">
+        <div class="main-visual__slide swiper">
+          <!-- 슬라이드 -->
+          <div class="main-visual__slide-wrapper swiper-wrapper">
+            <div class="main-visual__item swiper-slide">
+              <img src="./assets/images/main_1.jpg" alt="H.C 앰플" />
+              <div class="slide__inner-text-wrapper">
+                <div class="slide__inner-text">
+                  <p class="slide__inner-text--sub">피부에 풍부한 보습을!</p>
+                  <p>H.C Ample</p>
+                </div>
+              </div>
+            </div>
+            <div class="main-visual__item swiper-slide">
+              <img src="./assets/images/main_2.jpg" alt="H.C 크림" />
+              <div class="slide__inner-text-wrapper">
+                <div class="slide__inner-text">
+                  <p class="slide__inner-text--sub">촉촉함을 원한다면</p>
+                  <p>H.C Cream</p>
+                </div>
+              </div>
+            </div>
+            <div class="main-visual__item swiper-slide">
+              <img src="./assets/images/main_4.jpg" alt="H.C 파워 앰플" />
+              <div class="slide__inner-text-wrapper">
+                <div class="slide__inner-text">
+                  <p class="slide__inner-text--sub">유독 건조한 날엔</p>
+                  <p>H.C Power Ample</p>
+                </div>
+              </div>
+            </div>
+            <div class="main-visual__item swiper-slide">
+              <img src="./assets/images/main_3.jpg" alt="H.C 향수" />
+              <div class="slide__inner-text-wrapper">
+                <div class="slide__inner-text">
+                  <p class="slide__inner-text--sub">싱그러운 향기를</p>
+                  <p>H.C Perfume</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- (웹접근성) Skip navigation -->
+          <div class="slide__skip-navigation">
+            <div
+              class="slide__skip-navigation--btn slide__skip-navigation--prev">
+              이전 슬라이드
+            </div>
+            <div
+              class="slide__skip-navigation--btn slide__skip-navigation--next">
+              다음 슬라이드
+            </div>
+          </div>
+          <!-- 페이징 -->
+          <div class="slide__pagination-wrapper">
+            <div class="slide__pagination--pagination"></div>
+            <div class="slide__pagination--progressbar"></div>
+          </div>
+        </div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
-    <!-- Slider 테스트용 코드 - 끝 -->
+    </section>
 
     <!-- 스크립트 -->
     <!-- Swiper 스크립트 -->
