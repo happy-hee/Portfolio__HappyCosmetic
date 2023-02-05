@@ -82,6 +82,19 @@ button {
   }
 }
 
+/* 장바구니 버튼 */
+.cart-btn {
+  a {
+    display: inline-block;
+    width: 3.2rem;
+    height: 3.2rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 /* 헤더 */
 .header {
   position: absolute;
@@ -109,18 +122,6 @@ button {
       background-color: #000;
     }
   }
-
-  &__cart {
-    a {
-      display: inline-block;
-      width: 3.2rem;
-      height: 3.2rem;
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
   .logo {
     &__text {
       color: #000;
@@ -130,11 +131,12 @@ button {
 
 /* 섹션 */
 .section {
-  padding-bottom: 4.6rem;
+  padding-bottom: 5rem;
   &__top {
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__top-tit {
     font-size: 1.8rem;
@@ -189,7 +191,6 @@ button {
     }
   }
 }
-
 .top-btn {
   position: fixed;
   bottom: 1rem;
@@ -214,5 +215,86 @@ button {
   }
   &.hidden {
     right: -100%;
+  }
+}
+
+/* 사이드메뉴 */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background-color: #f6f7f9;
+  z-index: 100;
+  &--open {
+    display: block;
+  }
+  &__inner {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  &__header {
+    padding: 1.4rem 2rem 0 2rem;
+    display: flex;
+    background: #fff;
+  }
+  &__content {
+    padding: 1.4rem 2rem;
+    margin-bottom: 1.4rem;
+    background: #fff;
+  }
+  &--close-btn {
+    i {
+      font-size: 2.6rem;
+    }
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.4rem;
+    margin-bottom: 1.4rem;
+    border-bottom: 1px solid #ddd;
+  }
+  &__top-tit {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  &__top-more {
+    font-size: 1.4rem;
+  }
+  /* 사이드메뉴 카테고리 */
+  &__categories {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0 -1.6rem;
+    }
+    &-item {
+      padding: 0 0 2.6rem 2rem;
+      flex-basis: 50%;
+      > a {
+        display: flex;
+        align-items: center;
+        > span {
+          font-size: 1.6rem;
+          padding-left: 1rem;
+        }
+      }
+    }
+    &-icon {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  /* 사이드메뉴 이벤트 */
+  &__event-list {
+    margin-bottom: 2rem;
   }
 }

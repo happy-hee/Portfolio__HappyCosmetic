@@ -81,6 +81,17 @@ button {
   font-weight: 700;
 }
 
+/* 장바구니 버튼 */
+.cart-btn a {
+  display: inline-block;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.cart-btn a img {
+  width: 100%;
+  height: auto;
+}
+
 /* 헤더 */
 .header {
   position: absolute;
@@ -109,27 +120,19 @@ button {
   height: 0.2rem;
   background-color: #000;
 }
-.header__cart a {
-  display: inline-block;
-  width: 3.2rem;
-  height: 3.2rem;
-}
-.header__cart a img {
-  width: 100%;
-  height: auto;
-}
 .header .logo__text {
   color: #000;
 }
 
 /* 섹션 */
 .section {
-  padding-bottom: 4.6rem;
+  padding-bottom: 5rem;
 }
 .section__top {
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .section__top-tit {
   font-size: 1.8rem;
@@ -205,4 +208,80 @@ button {
 }
 .top-btn.hidden {
   right: -100%;
+}
+
+/* 사이드메뉴 */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background-color: #f6f7f9;
+  z-index: 100;
+  /* 사이드메뉴 카테고리 */
+  /* 사이드메뉴 이벤트 */
+}
+.side-menu--open {
+  display: block;
+}
+.side-menu__inner {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.side-menu__header {
+  padding: 1.4rem 2rem 0 2rem;
+  display: flex;
+  background: #fff;
+}
+.side-menu__content {
+  padding: 1.4rem 2rem;
+  margin-bottom: 1.4rem;
+  background: #fff;
+}
+.side-menu--close-btn i {
+  font-size: 2.6rem;
+}
+.side-menu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.4rem;
+  margin-bottom: 1.4rem;
+  border-bottom: 1px solid #ddd;
+}
+.side-menu__top-tit {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.side-menu__top-more {
+  font-size: 1.4rem;
+}
+.side-menu__categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -1.6rem;
+}
+.side-menu__categories-item {
+  padding: 0 0 2.6rem 2rem;
+  flex-basis: 50%;
+}
+.side-menu__categories-item > a {
+  display: flex;
+  align-items: center;
+}
+.side-menu__categories-item > a > span {
+  font-size: 1.6rem;
+  padding-left: 1rem;
+}
+.side-menu__categories-icon {
+  width: 4rem;
+  height: 4rem;
+}
+.side-menu__event-list {
+  margin-bottom: 2rem;
 }

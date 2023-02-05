@@ -118,3 +118,20 @@ window.addEventListener("scroll", (e) => {
   // 이전 스크롤 위치에 현재 스크롤 위치 저장
   lastScrollY = currentScrollY;
 });
+
+/**
+ * 헤더 햄버거버튼 클릭시 사이드메뉴 열기/닫기
+ */
+const sideMenuOpenBtn = document.querySelector(".header__burger-menu");
+const sideMenuCloseBtn = document.querySelector(".side-menu--close-btn");
+const sideMenu = document.querySelector(".side-menu");
+
+//사이드메뉴 열기
+sideMenuOpenBtn.addEventListener("click", () => {
+  sideMenu.classList.add("side-menu--open");
+});
+
+//사이드메뉴 닫기
+sideMenuCloseBtn.addEventListener("click", () => {
+  sideMenu.classList.remove("side-menu--open");
+});
