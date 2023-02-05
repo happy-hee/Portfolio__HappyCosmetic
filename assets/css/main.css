@@ -2,6 +2,10 @@
 /* Font */
 @import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css); /* ============== Main CSS ============== */
+.main-container {
+  background: #fff;
+}
+
 /* 메인비주얼 */
 .main-visual {
   position: relative;
@@ -189,7 +193,6 @@
 .section-rank .rank-tab {
   display: flex;
   align-items: center;
-  overflow: scroll;
 }
 .section-rank .rank-tab__item {
   padding: 0.6rem 1.3rem;

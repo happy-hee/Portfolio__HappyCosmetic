@@ -23,7 +23,6 @@ body {
   word-spacing: -0.07rem;
   word-break: keep-all;
   line-height: 1.285;
-  background-color: #f7f7f7;
   color: #333;
 }
 
@@ -70,8 +69,15 @@ button {
   background-color: transparent;
 }
 
-.main-container {
-  background: #fff;
+/* 로고 */
+.logo__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.logo__text {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 /* 헤더 */
@@ -111,21 +117,8 @@ button {
   width: 100%;
   height: auto;
 }
-
-/* 로고 */
-.logo__link {
-  display: flex;
-  align-items: center;
-}
-.logo__icon {
-  width: 3.5rem;
-  height: 3.5rem;
-}
-.logo__text {
-  display: block;
+.header .logo__text {
   color: #000;
-  font-size: 2.4rem;
-  font-weight: 700;
 }
 
 /* 섹션 */
@@ -147,4 +140,41 @@ button {
 
 .container {
   padding: 0 2rem;
+}
+
+/* 푸터 */
+.footer {
+  padding: 2.4rem 2rem 6rem 2rem;
+  text-align: center;
+  background-color: #f6f7f9;
+  color: #777;
+}
+.footer__logo {
+  margin-bottom: 1rem;
+}
+.footer__logo .logo__text {
+  font-size: 1.8rem;
+}
+.footer__info {
+  font-size: 1.2rem;
+}
+.footer__info--top {
+  margin-bottom: 1rem;
+}
+.footer__info--bottom {
+  margin-bottom: 2rem;
+}
+.footer__info--bold {
+  font-weight: 500;
+}
+.footer__info--top span:before, .footer__info--bottom span:before {
+  display: inline-block;
+  content: "|";
+  color: #bdbdbd;
+  margin: 0 0.6rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.footer__info--top span:first-child:before, .footer__info--bottom span:first-child:before {
+  display: none;
 }

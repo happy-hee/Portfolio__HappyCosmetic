@@ -22,7 +22,6 @@ body {
   word-spacing: -0.07rem;
   word-break: keep-all;
   line-height: 1.285;
-  background-color: #f7f7f7;
   color: #333;
 }
 
@@ -69,8 +68,17 @@ button {
   background-color: transparent;
 }
 
-.main-container {
-  background: #fff;
+/* 로고 */
+.logo {
+  &__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  &__text {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
 }
 
 /* 헤더 */
@@ -112,23 +120,10 @@ button {
       }
     }
   }
-}
-
-/* 로고 */
-.logo {
-  &__link {
-    display: flex;
-    align-items: center;
-  }
-  &__icon {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-  &__text {
-    display: block;
-    color: #000;
-    font-size: 2.4rem;
-    font-weight: 700;
+  .logo {
+    &__text {
+      color: #000;
+    }
   }
 }
 
@@ -150,4 +145,46 @@ button {
 }
 .container {
   padding: 0 2rem;
+}
+
+/* 푸터 */
+.footer {
+  padding: 2.4rem 2rem 6rem 2rem;
+  text-align: center;
+  background-color: #f6f7f9;
+  color: #777;
+  &__logo {
+    margin-bottom: 1rem;
+    .logo {
+      &__text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  &__info {
+    font-size: 1.2rem;
+    &--top {
+      margin-bottom: 1rem;
+    }
+    &--bottom {
+      margin-bottom: 2rem;
+    }
+    &--bold {
+      font-weight: 500;
+    }
+    &--top,
+    &--bottom {
+      span:before {
+        display: inline-block;
+        content: "|";
+        color: #bdbdbd;
+        margin: 0 0.6rem;
+        font-size: 1.2rem;
+        font-weight: normal;
+      }
+      span:first-child:before {
+        display: none;
+      }
+    }
+  }
 }
