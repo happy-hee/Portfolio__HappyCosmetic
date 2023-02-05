@@ -24,6 +24,7 @@ body {
   word-break: keep-all;
   line-height: 1.285;
   color: #333;
+  background-color: #e9e9e9;
 }
 
 .h1,
@@ -123,7 +124,7 @@ button {
 
 /* 섹션 */
 .section {
-  margin-bottom: 4.6rem;
+  padding-bottom: 4.6rem;
 }
 .section__top {
   margin-bottom: 2rem;
@@ -144,7 +145,7 @@ button {
 
 /* 푸터 */
 .footer {
-  padding: 2.4rem 2rem 6rem 2rem;
+  padding: 2.4rem 2rem 8rem 2rem;
   text-align: center;
   background-color: #f6f7f9;
   color: #777;
@@ -177,4 +178,31 @@ button {
 }
 .footer__info--top span:first-child:before, .footer__info--bottom span:first-child:before {
   display: none;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 2;
+  transition: 0.2s ease-in-out;
+}
+.top-btn a {
+  width: 5rem;
+  height: 5rem;
+  line-height: 6rem;
+  display: block;
+  background-color: #fff;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+  box-shadow: 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+}
+.top-btn a img {
+  width: 2.3rem;
+  display: inline-block;
+}
+.top-btn.hidden {
+  right: -100%;
 }

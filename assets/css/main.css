@@ -111,7 +111,7 @@
 
 /* 카테고리 */
 .section-categories {
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 .section-categories__list {
   display: flex;
@@ -142,7 +142,7 @@
 /* 배너 */
 .section-banner {
   width: 100%;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 .section-banner__img {
   display: block;
@@ -185,7 +185,7 @@
 
 /* 판매 랭킹 */
 .section-rank {
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 .section-rank__top {
   margin-bottom: 2rem;

@@ -19,39 +19,39 @@
     <title>Happy Cosmetic</title>
   </head>
   <body>
-    <div class="main-container">
-      <!-- 헤더 -->
-      <header class="header">
-        <div class="header__inner">
-          <!-- 햄버거 메뉴 -->
-          <button
-            class="header__burger-menu"
-            type="button"
-            aria-label="메뉴"
-            tabindex="2">
-            <span class="icon-line"></span>
-            <span class="icon-line"></span>
-            <span class="icon-line"></span>
-          </button>
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="header__inner">
+        <!-- 햄버거 메뉴 -->
+        <button
+          class="header__burger-menu"
+          type="button"
+          aria-label="메뉴"
+          tabindex="2">
+          <span class="icon-line"></span>
+          <span class="icon-line"></span>
+          <span class="icon-line"></span>
+        </button>
 
-          <!-- 로고 -->
-          <h1 class="header__logo">
-            <span class="logo">
-              <a class="logo__link" href="./index.html" tabindex="1">
-                <span class="logo__text">Happy Cosmetic</span>
-              </a>
-            </span>
-          </h1>
-
-          <!-- 장바구니 -->
-          <div class="header__cart">
-            <a href="./index.html">
-              <img src="./assets/images/icon/icon_cart.png" alt="장바구니" />
+        <!-- 로고 -->
+        <h1 class="header__logo">
+          <span class="logo">
+            <a class="logo__link" href="./index.html" tabindex="1">
+              <span class="logo__text">Happy Cosmetic</span>
             </a>
-          </div>
-        </div>
-      </header>
+          </span>
+        </h1>
 
+        <!-- 장바구니 -->
+        <div class="header__cart">
+          <a href="./index.html">
+            <img src="./assets/images/icon/icon_cart.png" alt="장바구니" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-container">
       <!-- 메인 비주얼 -->
       <section class="main-visual">
         <div class="main-visual__slide swiper">
@@ -834,40 +834,47 @@
           </div>
         </div>
       </section>
+    </div>
 
-      <!-- 푸터 -->
-      <footer class="footer">
-        <div class="footer__inner">
-          <div class="footer__logo">
-            <!-- 로고 -->
-            <span class="logo">
-              <a class="logo__link" href="./index.html">
-                <span class="logo__text">Happy Cosmetic</span>
-              </a>
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <!-- 로고 -->
+          <span class="logo">
+            <a class="logo__link" href="./index.html">
+              <span class="logo__text">Happy Cosmetic</span>
+            </a>
+          </span>
+        </div>
+        <div class="footer__info">
+          <div class="footer__info--top">
+            <span>
+              <a href="#">회사소개 </a>
+            </span>
+            <span>
+              <a href="#">이용약관</a>
+            </span>
+            <span class="footer__info--bold">
+              <a href="#">개인정보처리방침</a>
             </span>
           </div>
-          <div class="footer__info">
-            <div class="footer__info--top">
-              <span>
-                <a href="#">회사소개 </a>
-              </span>
-              <span>
-                <a href="#">이용약관</a>
-              </span>
-              <span class="footer__info--bold">
-                <a href="#">개인정보처리방침</a>
-              </span>
-            </div>
-            <div class="footer__info--bottom">
-              <span>Happy Cosmetic</span>
-              <span>대표자 : 김다희</span>
-              <span>이메일 : heetask@gmail.com</span>
-            </div>
-            <p>©Happy Cosmetic. All Rights Reserved</p>
+          <div class="footer__info--bottom">
+            <span>Happy Cosmetic</span>
+            <span>대표자 : 김다희</span>
+            <span>이메일 : heetask@gmail.com</span>
           </div>
+          <p>©Happy Cosmetic. All Rights Reserved</p>
         </div>
-      </footer>
-    </div>
+      </div>
+
+      <!-- 탑 버튼 -->
+      <div class="top-btn hidden">
+        <a href="#">
+          <img src="./assets/images/icon/icon_arrow_up.png" alt="맨위로" />
+        </a>
+      </div>
+    </footer>
 
     <!-- 스크립트 -->
     <!-- Swiper 스크립트 -->
