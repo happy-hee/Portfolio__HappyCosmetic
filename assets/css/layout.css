@@ -113,6 +113,7 @@ button {
   flex-direction: column;
   justify-content: space-between;
   height: 2rem;
+  cursor: pointer;
 }
 .header__burger-menu .icon-line {
   border-radius: 2rem;
@@ -218,6 +219,8 @@ button {
   right: 0;
   bottom: 0;
   display: none;
+  max-width: 102.4rem;
+  margin: 0 auto;
   background-color: #f6f7f9;
   z-index: 100;
   /* 사이드메뉴 카테고리 */
@@ -241,6 +244,9 @@ button {
   padding: 1.4rem 2rem;
   margin-bottom: 1.4rem;
   background: #fff;
+}
+.side-menu--close-btn {
+  cursor: pointer;
 }
 .side-menu--close-btn i {
   font-size: 2.6rem;
