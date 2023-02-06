@@ -78,9 +78,6 @@ tabItem.forEach((item, index) => {
       content.classList.remove("active");
     });
 
-    console.log(tabItem[index]);
-    console.log(tabContent[index]);
-
     tabItem[index].classList.add("active");
     tabContent[index].classList.add("active");
   });
